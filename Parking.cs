@@ -125,7 +125,7 @@ public class Parking
     public static decimal CalculateBill(DateTime? arrivedAt, DateTime? departedAt)
     {
         TimeSpan duration = departedAt.Value - arrivedAt.Value;
-        double totalHours = duration.TotalHours;
+        double totalHours = Math.Ceiling(duration.TotalHours);
 
         if (duration.TotalMinutes <= 15)
         {
