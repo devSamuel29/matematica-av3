@@ -50,21 +50,21 @@ public class RegexStates
 
     public const string MATO_GROSSO_REGEX_12_ANTIGA = @"^OB[A-S][0-9][0-9][0-9][0-9]$";
 
-    public const string MATO_GROSSO_REGEX_13 = "@$OO[G-U][0-9][A-Z][0-9][0-9]^";
+    public const string MATO_GROSSO_REGEX_13 = @"^OO[G-U][0-9][A-Z][0-9][0-9]$";
 
-    public const string MATO_GROSSO_REGEX_13_ANTIGA = "@$OO[G-U][0-9][0-9][0-9][0-9]^";
+    public const string MATO_GROSSO_REGEX_13_ANTIGA = @"^OO[G-U][0-9][0-9][0-9][0-9]$";
 
-    public const string MATO_GROSSO_REGEX_14 = "@$Q[BC][A-Z][0-9][A-Z][0-9][0-9]^";
+    public const string MATO_GROSSO_REGEX_14 = @"^Q[BC][A-Z][0-9][A-Z][0-9][0-9]$";
 
-    public const string MATO_GROSSO_REGEX_14_ANTIGA = "@$Q[BC][A-Z][0-9][0-9][0-9][0-9]^";
+    public const string MATO_GROSSO_REGEX_14_ANTIGA = @"^Q[BC][A-Z][0-9][0-9][0-9][0-9]$";
 
-    public const string MATO_GROSSO_REGEX_15 = "@$RA[K-Z][0-9][A-Z][0-9][0-9]^";
+    public const string MATO_GROSSO_REGEX_15 = @"^RA[K-Z][0-9][A-Z][0-9][0-9]$";
 
-    public const string MATO_GROSSO_REGEX_15_ANTIGA = "@$RA[K-Z][0-9][0-9][0-9][0-9]^";
+    public const string MATO_GROSSO_REGEX_15_ANTIGA = @"^RA[K-Z][0-9][0-9][0-9][0-9]$";
 
-    public const string MATO_GROSSO_REGEX_16 = "@^RR[I-Z][0-9][A-Z][0-9][0-9]$";
+    public const string MATO_GROSSO_REGEX_16 = @"^RR[I-Z][0-9][A-Z][0-9][0-9]$";
 
-    public const string MATO_GROSSO_REGEX_16_ANTIGA = "@^RR[I-Z][0-9][0-9][0-9][0-9]$";
+    public const string MATO_GROSSO_REGEX_16_ANTIGA = @"^RR[I-Z][0-9][0-9][0-9][0-9]$";
     
     public const string MATO_GROSSO_SUL_REGEX_1 = @"^HQ[F-Z][0-9][A-Z][0-9][0-9]$";
 
