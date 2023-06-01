@@ -71,7 +71,6 @@ public class Parking
     public void ParkUpdate(Car car)
     {
         car.DepartedAt = DateTime.Now;
-        ToPay(car);
     }
 
     public void ParkRemove(Car car)
@@ -79,11 +78,6 @@ public class Parking
         _parkedCars--;
         _carsLeaved.Add(car);
         _parkingList.Remove(car);
-    }
-
-    private double ToPay(Car car)
-    {
-        return 0;
     }
 
     public string ParkedCarsToString()
@@ -110,6 +104,11 @@ public class Parking
         return sb.ToString();
     }
 
+    public string GetLastCar(string plate) 
+    { 
+        return _carsLeaved.Where(u => u.Plate == plate).LastOrDefault().ToString();
+    }
+
     public string AllCarsParked()
     {
         StringBuilder sb = new StringBuilder();
@@ -132,7 +131,7 @@ public class Parking
             totalHours = 0;
         }
 
-        decimal additionalRate = 5.23m;
+        decimal additionalRate = 5.25m;
         decimal totalBill = additionalRate * (decimal)totalHours;
         return totalBill;
     }

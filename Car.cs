@@ -12,7 +12,7 @@ public class Car
 
     public string LocalPlate
     {
-        get { return States.getState(_plate); }
+        get { return States.getState(Plate); }
     }
 
     public DateTime? ArrivedAt { get; set; }
@@ -34,6 +34,6 @@ public class Car
 
     public override string ToString()
     {
-        return $"Carro: Placa = {_plate}, Local da placa = {LocalPlate}, Chegou às = {(ArrivedAt == null ? "ainda não estacionou" : ArrivedAt)}, Saiu às = {(DepartedAt == null ? "ainda não saiu" : DepartedAt)}, Conta = {(DepartedAt == null ? "nada a pagar por enquanto" : $"R$ {ToPay}")}.";
+        return $"Carro: Placa = {Plate}, Local da placa = {LocalPlate}, Chegou às = {(ArrivedAt == null ? "ainda não estacionou" : ArrivedAt)}, Saiu às = {(DepartedAt == null ? "ainda não saiu" : DepartedAt)}, Conta = {(DepartedAt == null ? "nada a pagar por enquanto" : $"R$ {ToPay}")}.";
     }
 }
