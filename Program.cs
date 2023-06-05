@@ -1,4 +1,6 @@
-﻿using Trabalho_matemática;
+﻿#nullable disable
+
+using Trabalho_matemática;
 
 Parking parking = new Parking();
 

@@ -1,3 +1,5 @@
+#nullable disable
+
 using System.Text;
 
 namespace Trabalho_matemática;
